@@ -5,6 +5,8 @@ import { SignedIn, SignedOut } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export default async function PostsPage() {
   const { userId } = await auth();
 
