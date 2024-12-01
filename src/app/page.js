@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HomePage() {
   return (
     <div className="container mx-auto p-6 text-center">
@@ -9,12 +11,12 @@ export default function HomePage() {
         thoughts.
       </p>
       <div className="mt-8">
-        <a
+        <Link
           href="/posts"
           className="inline-block bg-blue-500 text-white px-6 py-3 rounded-md shadow hover:bg-blue-600 transition"
         >
           View Posts
-        </a>
+        </Link>
       </div>
     </div>
   );

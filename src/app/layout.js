@@ -10,7 +10,9 @@ import "../styles/global.css";
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || ""}
+    >
       <html lang="en">
         <body className="bg-gray-100 min-h-screen flex flex-col">
           {/* Header */}
